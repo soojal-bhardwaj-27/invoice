@@ -33,7 +33,7 @@ export default function WhatsAppSupport() {
           <span>{settings.announcement_banner}</span>
         </div>
       )}
-      <aside aria-label="Support widget" className="whatsapp-float-container">
+      <div aria-label="Support widget" className="whatsapp-float-container">
         {showTooltip && (
           <div className="whatsapp-tooltip" role="tooltip">
             <strong>Need help?</strong>
@@ -54,7 +54,7 @@ export default function WhatsAppSupport() {
           </svg>
           <span className="whatsapp-text">WhatsApp</span>
         </a>
-      </aside>
+      </div>
     </>
   );
 }

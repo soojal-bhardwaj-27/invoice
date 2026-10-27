@@ -37,7 +37,7 @@ body{margin:0;background:var(--bg-app);color:var(--text-main);font-family:system
 button,input{font:inherit}
 button{cursor:pointer}
 main{min-height:100vh;display:flex}
-aside{width:220px;background:var(--bg-sidebar);color:var(--sidebar-text);display:flex;flex-direction:column;padding:32px 18px;position:fixed;height:100vh}
+main > aside{width:220px;background:var(--bg-sidebar);color:var(--sidebar-text);display:flex;flex-direction:column;padding:32px 18px;position:fixed;height:100vh;left:0;top:0}
 .brand{font-family:system-ui,-apple-system,sans-serif;font-weight:800;font-size:19px;letter-spacing:-1px;padding:0 7px;color:#fff}
 .brand span{display:inline-grid;place-items:center;background:var(--brand-accent-light);color:var(--brand-accent-text);width:32px;height:32px;border-radius:9px;margin-right:6px;font-size:22px}
 .aside-label{font-size:10px;letter-spacing:1.4px;color:var(--sidebar-text-muted);margin:68px 12px 14px}
@@ -138,6 +138,11 @@ textarea:focus{border-color:var(--input-focus);box-shadow:0 0 0 3px rgba(99,102,
   flex-direction: column;
   align-items: flex-end;
   gap: 8px;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
 }
 .whatsapp-float-btn {
   display: flex;
